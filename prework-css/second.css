@@ -1,0 +1,27 @@
+body {
+	font-family: sans-serif;
+	font-size: 20px;
+	color:#000;
+}
+
+h1 {
+	color:grey;
+	margin:50px 50px 25px;
+}
+
+a {
+	color:green;
+}
+
+#columns {
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+	c-webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 60px; /* Firefox */
+    column-gap: 60px;
+
+	margin:50px 50px 0;
+	display:block;
+}

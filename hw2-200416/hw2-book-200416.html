@@ -1,0 +1,23 @@
+<script>
+
+var grey = {
+	title: "50 shades",
+	body: ["page1", "page2", "page3"]
+}
+
+var black = {
+	title: "100 shades",
+	body: ["white", "yellow", "red"]
+}
+var i = {};
+function reading(book) {
+	console.log("Title: " + book.title);
+	for(i=0;i<book.body.length;i++){
+		console.log("Page " + (i +1) + ": " + book.body[i]);
+	}
+}
+
+reading(grey);
+reading(black);
+
+</script>

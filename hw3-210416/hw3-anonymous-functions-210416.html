@@ -1,0 +1,20 @@
+<script>
+
+function findSum(one, two){
+	return one + two;
+};
+
+function findProduct(first, second){
+	return first * second;
+};
+
+function threeOperation(x, operation){
+	return operation(3, x);
+}
+
+console.log(threeOperation(4, findSum));
+console.log(threeOperation(5, findSum));
+console.log(threeOperation(4, findProduct));
+console.log(threeOperation(5, findProduct));
+
+</script>

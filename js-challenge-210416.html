@@ -1,0 +1,44 @@
+<html>
+<script>
+
+var brother1 = {
+	name:"sem",
+	bankBalance:0,
+	monthlySavings:4000/12,
+	interestRate:10,
+	yearsSaving:20
+}
+var brother2 = {
+	name:"seth",
+	bankBalance:0,
+	monthlySavings:4000/12,
+	interestRate:10,
+	yearsSaving:25
+}
+
+function interest1(){
+	for(var i= 0; i <= brother1.yearsSaving ; i++){
+		brother1.bankBalance += (brother1.monthlySavings * 12);
+		brother1.bankBalance *= (1 + (brother1.interestRate / 100));
+		for(var i=0; i <= 25 ; i++){
+			brother1.bankBalance *= (1 + (brother1.interestRate / 100))
+		}
+	}
+	return brother1.bankBalance;
+}
+interest1();
+
+function interest2(){
+	for(var i=0; i <= brother2.yearsSaving ; i++){
+		brother2.bankBalance += (brother2.monthlySavings * 12);
+		brother2.bankBalance *= (1 + (brother2.interestRate / 100))
+	}
+	return brother2.bankBalance;
+}
+interest2();
+
+console.log("Client " + brother1.name + " saved " + brother1.bankBalance + " after " + (brother1.yearsSaving + 25) + " years.");
+console.log("Client " + brother2.name + " saved " + brother2.bankBalance + " after " + brother2.yearsSaving + " years.");
+
+</script>
+</html>
